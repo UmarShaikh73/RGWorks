@@ -1,0 +1,196 @@
+#rec1 {
+  transform-origin: left bottom;
+  transform-box: fill-box;
+  animation: hit 1s infinite forwards;
+  animation-delay: 3s;
+}
+
+#gear {
+  transform-origin: 79% 38%;
+  animation: rotate 6s infinite forwards;
+  animation-delay: 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  1% {
+    transform: rotateZ(-5deg);
+  }
+
+  /* ---------- */
+  16% {
+    transform: rotateZ(60deg);
+  }
+
+  17.5% {
+    transform: rotateZ(55deg);
+  }
+
+  /* ------- */
+  33% {
+    transform: rotateZ(120deg);
+  }
+
+  34.5% {
+    transform: rotateZ(115deg);
+  }
+  /* -------- */
+  48% {
+    transform: rotateZ(180deg);
+  }
+  49.5% {
+    transform: rotateZ(175deg);
+  }
+
+  /* -------- */
+  66% {
+    transform: rotateZ(240deg);
+  }
+
+  67.5% {
+    transform: rotateZ(235deg);
+  }
+
+  /* ------- */
+  83% {
+    transform: rotateZ(300deg);
+  }
+
+  84.5% {
+    transform: rotateZ(295deg);
+  }
+  /* ------ */
+
+  99% {
+    transform: rotateZ(355deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes hit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  2% {
+    transform: rotateZ(1deg);
+  }
+  10% {
+    transform: rotateZ(-1deg);
+  }
+  50% {
+    transform: rotateZ(-11deg);
+  }
+  90% {
+    transform: rotateZ(0deg);
+  }
+  98% {
+    transform: rotateZ(1deg);
+  }
+  100% {
+    transform: rotateZ(-1deg);
+  }
+}
+
+#rec3 {
+  fill: transparent;
+  animation: go3 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec4 {
+  fill: transparent;
+  animation: go4 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec6 {
+  fill: transparent;
+  animation: go6 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec7 {
+  fill: transparent;
+  animation: go7 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec8 {
+  fill: transparent;
+  animation: go8 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec9 {
+  fill: transparent;
+  animation: go9 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+#rec10_2 {
+  fill: transparent;
+  animation: go10 0.98s infinite forwards;
+  animation-delay: 2.9s;
+}
+
+@keyframes go3 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(95px, -70px);
+  }
+}
+
+@keyframes go4 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(70px, -70px);
+  }
+}
+
+@keyframes go6 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(80px, -50px);
+  }
+}
+
+@keyframes go7 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(40px, -40px);
+  }
+}
+
+@keyframes go8 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(60px, -60px);
+  }
+}
+
+@keyframes go9 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(20px, -50px);
+  }
+}
+
+@keyframes go10 {
+  0% {
+    fill: goldenrod;
+  }
+  100% {
+    transform: translate(150px, -150px);
+  }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.G.Works</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/logo.css">
+</head>
+<body onload="preloader()"> 
+
+    <div id="loader-con">
+        <div class="loader"></div>
+    </div>
+    <script>
+        function preloader() {
+            document.getElementById('loader-con').style.display = 'none';
+        }
+    </script>
+    <div id="root">
+    <div id="pop_con">
+       	<div id="pop_lang">
+            <span id="close1"> X </span>
+            <ul class="popt">
+                <li id="eng" >English</li>
+                <li id="hindi">हिंदी ( Hindi )</li>
+                <li id="guj">Gujarati</li>
+            </ul>
+        </div>
+        <!-- <div id="pop_pro">
+            <span id="close2"> X </span><br>
+            <img style="width: 60px; height: 50px;" src="./styles/proimg.jpg" alt="pro-img" />
+            <br>
+            <p>
+Devloper Name:  Umar Shaikh <br>
+Education    :  B.E. from L. J. Institude of Technology, Ahemedabad, Gujarat
+            </p>
+            <div class="social" style="display: flex;">
+                <img style="width: 30px; height: 30px;" src="./styles/linkdn.png" alt="linkdn-icon" />
+                <img style="width: 30px; height: 30px;" src="./styles/face.png" alt="facebook-icon" />
+            </div>
+        </div> -->
+    </div>
+ 
+    <header>
+        <div class="nav" style="
+        display:flex;align-items: center;">
+            <div class="svg">          
+                  <svg id="logo"  viewBox="0 0 303 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Frame 1">
+                    <g id="rec1">
+                    <path id="Rectangle 1" d="M0.923697 76.19C-0.691003 70.908 2.2815 65.3179 7.563 63.7032L176.829 11.9534L190.863 57.856L18.728 110.483C15.0309 111.613 11.1175 109.532 9.9872 105.835L0.923697 76.19Z" fill="black"/>
+                    <path id="R. G." d="M72.4243 69.086L69.5546 69.963L71.5112 76.363L67.9091 77.464L62.5642 59.982L69.06 57.996C71.1253 57.3646 72.8589 57.3379 74.2611 57.9158C75.6632 58.4937 76.6212 59.6232 77.1351 61.3042C77.4998 62.4969 77.5443 63.5731 77.2687 64.5326C76.9987 65.4817 76.4116 66.3527 75.5073 67.146L81.4738 73.133L81.5252 73.302L77.6589 74.484L72.4243 69.086ZM68.6626 67.046L71.5683 66.1572C72.4728 65.8807 73.1035 65.4384 73.4603 64.8304C73.8147 64.2144 73.8682 63.5022 73.6211 62.6937C73.369 61.8692 72.9346 61.293 72.318 60.9651C71.7093 60.6348 70.9207 60.6177 69.9521 60.9138L67.0584 61.7985L68.6626 67.046ZM83.0452 70.973C82.8763 70.42 82.9234 69.916 83.1863 69.459C83.4573 69 83.873 68.684 84.4333 68.513C85.002 68.339 85.523 68.368 85.996 68.6C86.477 68.829 86.803 69.22 86.972 69.772C87.138 70.316 87.09 70.817 86.827 71.274C86.561 71.723 86.14 72.035 85.564 72.211C84.9956 72.385 84.476 72.36 84.005 72.136C83.5315 71.905 83.2116 71.517 83.0452 70.973ZM110.051 62.1645C109.64 63.1392 108.908 64.0238 107.856 64.8182C106.801 65.6047 105.553 66.2182 104.112 66.6587C102.599 67.121 101.17 67.199 99.825 66.8929C98.485 66.576 97.311 65.8846 96.302 64.8187C95.301 63.7504 94.534 62.3702 93.999 60.6781L93.635 59.4894C93.102 57.7444 92.933 56.1461 93.128 54.6947C93.329 53.2328 93.879 51.9968 94.778 50.9867C95.683 49.9661 96.879 49.2282 98.368 48.773C100.441 48.1392 102.214 48.1399 103.686 48.7752C105.156 49.4025 106.288 50.6276 107.081 52.4507L103.575 53.5226C103.109 52.571 102.529 51.9474 101.835 51.652C101.149 51.3542 100.325 51.3521 99.365 51.6457C98.14 52.0202 97.348 52.7656 96.989 53.8819C96.63 54.9982 96.724 56.4662 97.272 58.2857L97.613 59.4024C98.174 61.2355 98.945 62.5138 99.928 63.2375C100.911 63.9611 102.075 64.1174 103.419 63.7062C104.772 63.2926 105.649 62.7096 106.049 61.957L105.128 58.9432L101.85 59.9454L101.038 57.2918L107.918 55.1883L110.051 62.1645ZM113.087 61.7878C112.918 61.2354 112.965 60.7309 113.228 60.2741C113.499 59.8149 113.915 59.4996 114.475 59.3283C115.044 59.1545 115.565 59.1835 116.038 59.4151C116.519 59.6443 116.845 60.035 117.013 60.5874C117.18 61.1317 117.132 61.6322 116.869 62.089C116.603 62.5378 116.182 62.8503 115.606 63.0265C115.038 63.2003 114.518 63.1753 114.047 62.9517C113.573 62.7201 113.254 62.3321 113.087 61.7878Z" fill="url(#paint0_linear)"/>
+                    <path id="Vector 1" d="M170.656 20.0515L10.2019 69.107L20.7273 103.534L181.181 54.4785L170.656 20.0515Z" stroke="#EEEEEE" stroke-width="3"/>
+                    </g>
+                    <g id="rec2">
+                    <path id="Rectangle 2" d="M19 115H191V153C191 158.523 186.523 163 181 163H26C22.134 163 19 159.866 19 156V115Z" fill="black"/>
+                    <path id="WORKS" d="M76.8705 142.699L79.3315 129.692H83.0857L79.0301 147.973H75.2383L72.2626 135.743L69.2868 147.973H65.495L61.4395 129.692H65.1936L67.6671 142.674L70.6805 129.692H73.8697L76.8705 142.699ZM100.149 139.247C100.149 141.046 99.831 142.624 99.195 143.98C98.559 145.336 97.646 146.382 96.458 147.119C95.277 147.856 93.921 148.224 92.39 148.224C90.874 148.224 89.523 147.86 88.334 147.132C87.145 146.403 86.225 145.365 85.572 144.018C84.9188 142.662 84.5882 141.105 84.5798 139.347V138.443C84.5798 136.643 84.9021 135.061 85.547 133.697C86.199 132.324 87.116 131.274 88.296 130.545C89.485 129.809 90.841 129.44 92.364 129.44C93.888 129.44 95.24 129.809 96.42 130.545C97.609 131.274 98.525 132.324 99.17 133.697C99.823 135.061 100.149 136.639 100.149 138.43V139.247ZM96.332 138.418C96.332 136.501 95.989 135.044 95.302 134.048C94.616 133.052 93.637 132.554 92.364 132.554C91.1 132.554 90.125 133.048 89.439 134.036C88.753 135.015 88.405 136.455 88.397 138.355V139.247C88.397 141.113 88.74 142.561 89.426 143.591C90.113 144.62 91.1 145.135 92.39 145.135C93.653 145.135 94.624 144.641 95.302 143.654C95.98 142.657 96.324 141.209 96.332 139.309V138.418ZM109.654 141.281H106.653V147.973H102.886V129.692H109.679C111.838 129.692 113.504 130.173 114.676 131.135C115.848 132.098 116.434 133.458 116.434 135.216C116.434 136.463 116.162 137.505 115.618 138.342C115.082 139.171 114.266 139.832 113.169 140.326L117.124 147.797V147.973H113.081L109.654 141.281ZM106.653 138.229H109.691C110.637 138.229 111.37 137.991 111.889 137.514C112.408 137.028 112.667 136.363 112.667 135.517C112.667 134.655 112.42 133.977 111.926 133.483C111.441 132.99 110.692 132.743 109.679 132.743H106.653V138.229ZM125.035 140.64L123.076 142.75V147.973H119.309V129.692H123.076V137.978L124.733 135.706L129.391 129.692H134.025L127.533 137.815L134.213 147.973H129.73L125.035 140.64ZM145.111 143.176C145.111 142.465 144.86 141.921 144.358 141.544C143.856 141.159 142.952 140.757 141.646 140.339C140.34 139.912 139.306 139.493 138.545 139.083C136.469 137.962 135.431 136.451 135.431 134.551C135.431 133.563 135.707 132.684 136.259 131.914C136.82 131.135 137.62 130.529 138.658 130.093C139.704 129.658 140.876 129.44 142.173 129.44C143.479 129.44 144.643 129.679 145.664 130.156C146.685 130.625 147.476 131.29 148.037 132.152C148.606 133.015 148.891 133.994 148.891 135.091H145.124C145.124 134.253 144.86 133.605 144.333 133.144C143.806 132.676 143.065 132.441 142.11 132.441C141.19 132.441 140.474 132.638 139.963 133.031C139.453 133.416 139.198 133.927 139.198 134.563C139.198 135.157 139.495 135.656 140.089 136.057C140.692 136.459 141.575 136.836 142.738 137.187C144.881 137.832 146.442 138.631 147.422 139.586C148.401 140.54 148.891 141.728 148.891 143.151C148.891 144.733 148.292 145.976 147.095 146.88C145.898 147.776 144.287 148.224 142.261 148.224C140.855 148.224 139.574 147.969 138.419 147.458C137.264 146.939 136.381 146.232 135.77 145.336C135.167 144.44 134.866 143.402 134.866 142.222H138.645C138.645 144.24 139.85 145.248 142.261 145.248C143.157 145.248 143.856 145.068 144.358 144.708C144.86 144.34 145.111 143.829 145.111 143.176Z" fill="url(#paint1_linear)"/>
+                    <path id="Vector 2" d="M182 120.973H28V156.973H182V120.973Z" stroke="white" stroke-width="3"/>
+                    </g>
+                    <g id="rect3">
+                    <g id="Ellipse 1" filter="url(#filter0_d)">
+                    <path id="Vector" d="M17.5 124C23.299 124 28 119.747 28 114.5C28 109.253 23.299 105 17.5 105C11.701 105 7 109.253 7 114.5C7 119.747 11.701 124 17.5 124Z" fill="#363535"/>
+                    </g>
+                    <path id="Ellipse 2" d="M17.5 120C20.5376 120 23 117.538 23 114.5C23 111.462 20.5376 109 17.5 109C14.4624 109 12 111.462 12 114.5C12 117.538 14.4624 120 17.5 120Z" fill="black"/>
+                    <path id="Ellipse 3" d="M17.6 117C18.7046 117 19.6 116.105 19.6 115C19.6 113.895 18.7046 113 17.6 113C16.4954 113 15.6 113.895 15.6 115C15.6 116.105 16.4954 117 17.6 117Z" fill="white"/>
+                    </g>
+                    <g id="gear">
+                    <g id="Group">
+                    <path id="Vector_2" d="M205.998 11.1838C199.624 15.7641 192.158 24.0001 187.699 31.3573C186.92 32.6448 186.576 33.288 185.937 34.6697C185.347 35.9632 185.36 36.0928 186.257 37.4856C187.331 39.1563 188.62 40.3458 192.829 43.5245C195.672 45.6659 197.087 46.7984 197.227 47.0191C197.305 47.1418 197.27 47.3244 197.131 47.5967C196.182 49.3824 194.922 56.3249 195.107 58.8016C195.128 59.1442 195.097 59.4966 195.022 59.5788C194.665 60.0008 192.994 60.4319 188.645 61.2222C184.562 61.9579 182.821 62.3527 181.4 62.8313C180.366 63.1901 179.403 63.7334 179.301 64.028C179.137 64.5343 179.538 69.1 179.988 71.776C181.191 78.84 183.728 86.984 186.532 92.779C186.909 93.572 187.573 94.745 188.228 95.775L189.291 97.465L189.756 97.651C190.396 97.91 191.381 97.857 192.745 97.507C194.253 97.111 195.476 96.667 198.461 95.389C201.009 94.297 201.444 94.124 202.486 93.76C203.312 93.476 203.832 93.364 204.245 93.376C204.545 93.392 204.63 93.453 204.838 93.78C205.149 94.271 206.004 95.197 206.947 96.078C209.175 98.163 212.913 100.964 214.456 101.716C214.953 101.951 215.048 102.029 215.094 102.264C215.235 102.978 214.927 104.115 213.274 108.781C211.708 113.221 211.228 115.144 211.433 116.231L211.511 116.663L212.325 117.087C220.635 121.436 235.586 124.501 244.208 123.6C244.95 123.53 244.997 123.512 245.344 123.165C245.926 122.588 246.246 121.834 246.629 120.179C247.004 118.528 247.145 117.474 247.453 114.007C247.779 110.276 248.066 108.796 248.528 108.503C248.635 108.434 249.073 108.34 249.509 108.28C252.035 107.972 258.121 105.871 260.648 104.437C261.386 104.013 261.731 103.863 261.895 103.885C262.385 103.964 263.566 105.13 265.889 107.855C268.603 111.031 270.046 112.536 271.376 113.608C272.237 114.288 272.679 114.547 273.352 114.75L273.894 114.911L275.521 113.808C277.673 112.348 279.151 111.121 281.444 108.918C286.14 104.394 291.053 97.896 294.067 92.238C295.181 90.129 295.688 88.923 295.64 88.483C295.571 87.918 294.943 86.986 294.101 86.189C292.966 85.132 292.225 84.604 287.584 81.585C285.859 80.455 284.868 79.661 284.618 79.177C284.461 78.875 284.469 78.779 284.735 78.196C285.26 77.036 285.623 75.841 286.191 73.31C286.947 70.017 287.36 67.08 287.243 65.8572C287.197 65.3472 287.391 65.1431 288.18 64.8716C289.017 64.5685 290.186 64.3306 293.836 63.6976C297.112 63.1308 299.366 62.6158 300.549 62.1626C301.267 61.8898 302.175 61.3697 302.44 61.0753C302.59 60.911 302.604 59.8227 302.468 57.9693C302.002 51.6077 299.482 42.6715 296.109 35.3799C294.926 32.8262 294.443 31.9393 293.188 29.9474C291.78 27.7319 291.717 27.6688 290.908 27.5628C289.415 27.3638 287.368 28.0226 282.351 30.2937C279.134 31.7534 277.739 32.2379 277.216 32.0885C277.082 32.0592 276.818 31.7904 276.531 31.4108C275.503 30.0669 273.938 28.5707 271.506 26.6037C269.66 25.1025 268.033 23.9446 267.274 23.589C266.98 23.4544 266.795 23.3083 266.755 23.1729C266.567 22.6037 266.955 21.0829 267.974 18.3339C269.621 13.9121 270.448 11.1139 270.487 9.7917C270.51 8.7898 270.446 8.6701 269.75 8.2859C261.075 3.5837 244.993 -0.277503 237.326 0.521197C236.697 0.588097 236.522 0.641598 236.276 0.855498C235.233 1.7827 234.63 4.0029 234.154 8.6099C233.704 12.9829 233.625 13.6416 233.416 14.589C233.291 15.1391 233.103 15.7178 233.008 15.8589C232.834 16.0956 232.75 16.1264 232.039 16.2108C230.201 16.4152 227.205 17.332 223.964 18.6808C222.756 19.1847 220.902 20.111 220.666 20.3412C220.125 20.857 219.273 20.1709 216.809 17.2604C214.119 14.0683 213.237 13.0449 212.561 12.327C211.111 10.7923 209.719 9.7141 208.977 9.5312L208.609 9.4438L207.506 10.1679C206.893 10.5692 206.219 11.0207 205.998 11.1838ZM237.038 49.4106C239.669 48.2314 242.24 47.9403 244.737 48.5343C247.274 49.1371 249.235 50.3467 251.335 52.5934C252.282 53.6098 254.132 56.5203 254.661 57.8256C256.621 62.6753 255.629 67.381 251.875 71.019C249.828 73.009 246.741 74.764 244.254 75.37C239.536 76.509 235.285 74.976 231.89 70.947C231.174 70.093 229.858 67.968 229.411 66.9554C226.989 61.4697 228.248 56.0199 232.857 52.0683C233.847 51.221 235.884 49.9262 237.038 49.4106Z" fill="url(#paint2_linear)"/>
+                    </g>
+                    </g>
+                    <g id="rec10">
+                    <path id="rec3" d="M194.078 60.1543C193.712 59.8125 193.655 59.2521 193.945 58.8436L207.388 39.931C207.739 39.438 208.443 39.3665 208.885 39.779L211.707 42.41C212.111 42.7867 212.133 43.4194 211.756 43.8233L196.07 60.6445C195.693 61.0484 195.061 61.0705 194.657 60.6938L194.078 60.1543Z" fill="url(#paint3_diamond)" fill-opacity="0.94"/>
+                    <path id="rec8" d="M191.68 58.9932C191.183 58.9321 190.807 58.5122 190.802 58.011L190.561 34.8088C190.555 34.204 191.083 33.7321 191.683 33.8058L195.512 34.276C196.06 34.3433 196.45 34.8422 196.383 35.3904L193.58 58.219C193.513 58.7671 193.014 59.1569 192.465 59.0896L191.68 58.9932Z" fill="url(#paint4_diamond)" fill-opacity="0.94"/>
+                    <path id="rec6" d="M195.731 58.4861C195.644 57.9925 195.936 57.5107 196.413 57.3592L218.531 50.3453C219.108 50.1624 219.714 50.5292 219.819 51.1248L220.488 54.924C220.584 55.4679 220.221 55.9866 219.677 56.0825L197.027 60.0764C196.483 60.1723 195.964 59.8091 195.868 59.2652L195.731 58.4861Z" fill="url(#paint5_diamond)" fill-opacity="0.94"/>
+                    <path id="rec4" d="M191.645 56.7551C191.211 56.5045 191.029 55.9712 191.22 55.5079L200.065 34.056C200.295 33.4968 200.965 33.2687 201.489 33.5711L204.83 35.5C205.308 35.7761 205.472 36.3877 205.196 36.866L193.696 56.7846C193.42 57.2629 192.808 57.4268 192.33 57.1506L191.645 56.7551Z" fill="url(#paint6_diamond)" fill-opacity="0.94"/>
+                    <path id="rec7" d="M195.003 59.077C194.526 58.9221 194.238 58.4383 194.328 57.9454L198.519 35.1234C198.628 34.5286 199.237 34.1661 199.812 34.353L203.481 35.5451C204.006 35.7157 204.293 36.2799 204.123 36.8052L197.015 58.6795C196.845 59.2047 196.281 59.4922 195.755 59.3215L195.003 59.077Z" fill="url(#paint7_diamond)" fill-opacity="0.94"/>
+                    <path id="rec9" d="M194.104 60.145C193.854 59.7109 193.963 59.1584 194.36 58.8526L212.746 44.6968C213.225 44.3278 213.919 44.4654 214.222 44.9892L216.151 48.3301C216.427 48.8084 216.263 49.42 215.785 49.6962L195.866 61.1962C195.388 61.4723 194.776 61.3084 194.5 60.8301L194.104 60.145Z" fill="url(#paint8_diamond)" fill-opacity="0.94"/>
+                    <path id="rec10_2" d="M195.342 59.4389C195.342 58.9377 195.713 58.5139 196.21 58.4477L219.21 55.381C219.81 55.3011 220.342 55.7675 220.342 56.3723V60.2301C220.342 60.7824 219.895 61.2301 219.342 61.2301H196.342C195.79 61.2301 195.342 60.7824 195.342 60.2301V59.4389Z" fill="url(#paint9_diamond)" fill-opacity="0.94"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="3" y="105" width="29" height="27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear" x1="87.837" y1="46.2752" x2="96.901" y2="75.921" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="0.348958" stop-color="white"/>
+                    <stop offset="0.411458" stop-color="#CBC1C1" stop-opacity="0.31"/>
+                    <stop offset="0.489583" stop-color="white"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="105.5" y1="123.973" x2="105.5" y2="153.973" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F7F3F3"/>
+                    <stop offset="0.421875" stop-color="white"/>
+                    <stop offset="0.489583" stop-color="#454343"/>
+                    <stop offset="0.583333" stop-color="white"/>
+                    <stop offset="1" stop-color="#F1EAEA"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear" x1="273.82" y1="114.958" x2="207.281" y2="10.2878" gradientUnits="userSpaceOnUse">
+                    <stop/>
+                    <stop offset="0.46875" stop-color="#696767" stop-opacity="0.774217"/>
+                    <stop offset="0.505208" stop-color="#9D9B9B"/>
+                    <stop offset="0.546875" stop-color="#494747" stop-opacity="0.71"/>
+                    <stop offset="1"/>
+                    </linearGradient>
+                    <radialGradient id="paint3_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(201.719 50.1879) rotate(43) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint4_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(192.004 46.4391) rotate(7) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint5_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(207.831 55.125) rotate(80) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint6_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(196.848 45.3253) rotate(30) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint7_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(197.716 46.8153) rotate(18) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint8_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(204.325 52.8481) rotate(60) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    <radialGradient id="paint9_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(207.842 58.2301) rotate(90) scale(3 12.5)">
+                    <stop stop-color="#FF8A00"/>
+                    <stop offset="0.864583" stop-color="#FF9900"/>
+                    <stop offset="1" stop-color="#FFC700"/>
+                    </radialGradient>
+                    </defs>
+                  </svg>
+            </div>    
+            <button id="menu">+91&nbsp;&nbsp; 987-XXX-XXXX</button>
+      
+        </div>    
+        
+        <div class="glass">
+            <h1 id="id1"> Paste filling pump machine part</h1>
+            <h3 id="company_name">
+                R.G. Works
+            </h3>
+            <button id="lang">Language??</button>    
+        </div>
+    </header>
+
+    <main class="product">
+        <div class="bottom_border"></div>
+        <h3 id="id2">Product <span>&</span> </h3>
+        <h3 id='id21'>It's description</h3>
+        <div class="bottom_border"></div>
+        <p class="discription" id="id3">
+            It is a Paste Filling  machine's pump.
+            Used in packging of bottle or a tube or a pouch, depending on the product. 
+            cream and paste are mainly use with this pump.
+            product comes with fullly polished metallic shine.
+        </p>
+        
+        <canvas id='can' style="display: block;width: 100vw;"></canvas> 
+        <div class="controls">
+            <h3 id="id4">Controls:-</h3>
+            <ul class="position">
+                <li id="up">up</li>
+                <li id="right">→</li>
+                <li id="down">↓</li>
+                <li id="left">←</li>
+                <li id="front">X</li>
+                <li id="back">Y</li>
+            </ul>
+         </div>
+    </main>
+   
+    <div class="product-img">
+        <div class="bottom_border"></div>
+        <h3 id="id31">Pics of Product</h3>
+        <div class="bottom_border"></div>
+        <div class="img-container">
+            <img src="./image/1.jpg" alt="Paste filling pump machine part">
+        </div>
+        
+        <div id="rest-img">
+            <div class="img-container">
+                <img src="./image/2.jpg" alt="Paste filling pump machine part">
+            </div>
+            <div class="img-container">
+                <img src="./image/3.jpg" alt="Paste filling pump machine part">
+            </div>
+            <div class="img-container">
+                <img src="./image/4.jpg" alt="Paste filling pump machine part">
+            </div>
+            <div class="img-container">
+                <img src="./image/5.jpg" alt="Paste filling pump machine part">
+            </div>
+        </div>
+        <button id="rest-btn">see All...</button>
+    </div>
+
+    <section class="about_us">
+        <div class="bottom_border"></div>
+        <h3 id="id5">About Us</h3>
+        <div class="bottom_border"></div>
+        <p id="id6">We are Ahemedabad, Gujarat based producer.</p>
+                
+        <img src="./image/warehouse.png" alt="image of real grinding works at Ahemedabad." />
+        <h4 id="id7">Our full Address</h4>
+        <p id="idaddress">
+            1,NICHOLAS RESIDENCY,<br />NEAR INDIA GATE SOCIETY,
+            <br /> NEAR KALUPUR TOWER ,<br />SMILEKHEJ, AHMEDABAD
+            <br />GUJARAT-380055
+        </p>
+
+    </section>
+
+    <footer>
+        <div class="main-thing">
+            <h4 id="id9" style="margin-bottom: 1rem;">contact us on:- (Call Us)</h4>
+            <p><span> No. </span> <input type="text" id="copytxt" value="987-XXX-XXXX"  /> <span id="copy" > Copy </span> </p>
+        </div>
+        <script>
+            const btncopy = document.getElementById('copy');
+            btncopy.addEventListener('click', () => {
+                document.getElementById('copytxt').select();
+
+                document.execCommand('Copy');
+                btncopy.innerText = 'Copyed!!'
+            });
+        </script>
+        <!-- 987-975-4933 -->
+        <p id="id10" class="author">Created and maintaind By <br />Umar Shaikh. 
+            <a href="#" id="id11" class="pop_up">
+                see profile
+            </a> 
+        </p>
+    </footer>
+</div>
+    <script src="./scripts/lang.js"></script>
+     <script type="module" src="./scripts/3dModel.js"></script> 
+</body>
+</html>
